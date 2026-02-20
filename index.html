@@ -283,7 +283,7 @@
       width: 100%;
       aspect-ratio: 3/4;
       object-fit: cover;
-      object-position: top center;
+      object-position: center 20%;
       display: block;
       filter: saturate(0.9);
     }
@@ -754,7 +754,7 @@
         <!-- Using the professional portrait photo (image 11) -->
         <img
           class="about-photo"
-          src="PXL_20240505_001143995_PORTRAIT2.jpg"
+          src="PXL_20230612_151846325_PORTRAIT_ORIGINAL.jpg"
           alt="Dr. Jeff Wayland, MD — Flight Physician"
           onerror="this.style.background='linear-gradient(135deg, #1a3a5c, #2d5f8a)'; this.style.display='block';"
         />
@@ -822,7 +822,7 @@
         <p>Whether you're a colleague, a medical professional, or someone with a professional inquiry — I welcome the conversation.</p>
         <div class="contact-detail">
           <span class="contact-detail-icon">✉️</span>
-          <span class="contact-detail-text">jeffreywayland@gmail.com</span>
+          <span class="contact-detail-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="adc7c8cbcbdfc8d4daccd4c1ccc3c9edcac0ccc4c183cec2c0">[email&#160;protected]</a></span>
         </div>
         <div class="contact-detail">
           <span class="contact-detail-icon">📍</span>
@@ -864,7 +864,7 @@
           <button type="submit" class="form-submit">Send Message</button>
         </form>
         <div class="form-success" id="form-success">
-          ✓ &nbsp; Thank you — your message has been sent to jeffreywayland@gmail.com. I'll be in touch soon.
+          ✓ &nbsp; Thank you — your message has been sent to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c06090a0a1e09151b0d15000d02082c0b010d0500420f0301">[email&#160;protected]</a>. I'll be in touch soon.
         </div>
       </div>
     </div>
@@ -876,7 +876,7 @@
     <div class="footer-note">Intensivist · Emergency Physician · Flight Physician · Albuquerque, NM</div>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Nav scroll effect
     const nav = document.getElementById('main-nav');
     window.addEventListener('scroll', () => {
@@ -906,14 +906,4 @@
       const body = encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`
       );
-      const mailtoLink = `mailto:jeffreywayland@gmail.com?subject=${encodeURIComponent(subject + ' — jeffwayland.com')}&body=${body}`;
-
-      window.location.href = mailtoLink;
-
-      // Show success message
-      document.getElementById('contact-form').style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
-    });
-  </script>
-</body>
-</html>
+      const mailtoLink =
